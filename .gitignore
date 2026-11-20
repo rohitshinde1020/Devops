@@ -1,0 +1,83 @@
+# Environment variables and virtual environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Python packaging and build output
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Flask
+instance/
+.webassets-cache/
+
+# Compiled C/C++ and native output
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+a.out
+
+# Archives and temporary files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Microsoft Office temporary files
+~$*

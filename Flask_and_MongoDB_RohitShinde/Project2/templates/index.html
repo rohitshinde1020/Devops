@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to the Flask App</h1>
+        <p>This is a simple Flask app that demonstrates form submission.</p>
+
+        <form action="/submit" method="post">
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <br>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Error message -->
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+
+</body>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    div {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Added error styling only */
+    .error {
+        color: #dc3545;
+        background-color: #ffe6e6;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+</style>
+
+</html>
